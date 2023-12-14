@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Popup from 'reactjs-popup';
 
@@ -19,6 +18,7 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
       }}
     >
       <div></div>
+
       <main>
         <img src={burgerSrc} alt={itemNum} />
 
@@ -35,6 +35,7 @@ const MenuCard = ({ itemNum, burgerSrc, price, title, handler, delay = 0 }) => {
 
         
       </main>
+      
     </motion.div>
   );
 };
