@@ -40,20 +40,20 @@ const Cart = () => {
           title={"Veg Cheese Burger"}
           img={burger2}
           value={0}
-          increment={() => increment(1)}
+          increment={() => increment(2)}
           // Add the function for decrementing the order by 2
-          decrement={() => decrement(1)}
+          decrement={() => decrement(2)}
        
         />
 
-        {/* Fill up the code for Cheese Burger similarly */}
+        {/* Fill up the code for Cheese Burger with French Fries similarly */}
         <CartItem
           title={"Cheese Burger with French Fries"}
           img={burger3}
           value={0}
-          increment={() => increment(1)}
-          // Add the function for decrementing the order by 2
-          decrement={() => decrement(1)}
+          increment={() => increment(3)}
+          // Add the function for decrementing the order by 3
+          decrement={() => decrement(3)}
        
         />
        

@@ -1,19 +1,25 @@
-// Write all the code here
+import { IoFastFoodOutline } from 'react-icons/io5';
+import { Link } from "react-router-dom";
+import { FiShoppingCart} from 'react-icons/fi';
+import { motion } from 'framer-motion';
+import DropDownMenu from './DropdownMenu';
+
 const Header = () => {
     return (
-        // <div>This is header</div>
-        <>
             <nav>
+                <motion.div initial={{ x: "-100% "}} whileInView={{ x: 0}}>
+                    <IoFastFoodOutline />
+                </motion.div>
                 <div>
-                    
-                    <a href="/">Home</a>
-                    <a href="/Contact">Contact</a>
-                    <a href="/About">About</a>
-                    <a href="/Cart">Shopping Cart</a>
-                    <a href="/DropdownMenu">DropdownMenu</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/cart">
+                        <FiShoppingCart />
+                    </Link>
+                    <DropDownMenu />
                 </div>
             </nav>
-        </>
     )
 }
 
