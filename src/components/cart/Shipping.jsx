@@ -3,6 +3,7 @@ import {
   Country,
   State,
 } from 'country-state-city';
+import { Link } from 'react-router-dom';
 
 const Shipping = () => {
   return (
@@ -53,11 +54,11 @@ const Shipping = () => {
             <input type="tel" placeholder='Enter Phone No.' />
           </div>
           <Popup trigger=
-                {<button type = "button">Confirm Order</button>}
-                position="right center">
+                {<Link className='link'>Confirm Order</Link>}
+                position="right top">
                 <div style={{color:"red",position: 'absolute', top: '50%', right: '100%', transform: 'translateY(-50%)', backgroundColor: '#fff', padding: '10px', borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}>Order Placed</div>
                
-            </Popup>
+          </Popup>
         </form>
       </main>
     </section>
